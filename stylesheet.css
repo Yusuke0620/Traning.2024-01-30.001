@@ -261,7 +261,7 @@ footer
 mainVisual
 -------------------------------------------*/
 #mainVisual {
-    background-image: url("images/mainvisual-sp.jpg");
+    background-image: url("mainvisual-sp.jpg");
     padding: 20px;
 }
 #mainVisual .mainVisual-nav {

@@ -78,7 +78,7 @@ img {
 mainVisual
 -------------------------------------------*/
 #mainVisual {
-    background-image: url("mainvisual-pc.jpg");
+    background-image: url("images/mainvisual-pc.jpg");
     height: 100vh;
     width: 100%;
     background-position: center top;
@@ -86,7 +86,6 @@ mainVisual
 }
 #mainVisual .online-store {
     position: absolute;
-    content: "";
     bottom: 40px;
     left: 50px;
     background-color: #333333;
@@ -146,10 +145,6 @@ create-new-values
     display: flex;
     flex-direction: row-reverse;
     margin-top: 180px;
-    width: 100%;
-}
-#create-new-values img {
-    max-width: 100%;
 }
 #create-new-values .images-text {
     position: relative;
@@ -158,11 +153,11 @@ create-new-values
     margin: 100px 15px 0 0;
 }
 #create-new-values p {
+    width: 56%;
     position: absolute;
     bottom: -20px;
     left: -20px;
-    padding: 52px 0;
-    width: 56%;
+    padding: 50px 0;
     text-align: center;
     color: #fff;
     background-color: #f9e90699;
@@ -183,9 +178,6 @@ science-technology
     margin: 100px 0 0 15px;
     width: 65%;
     writing-mode: horizontal-tb; /* 横書きに戻すための指定 */
-}
-#science-technology img {
-    max-width: 100%;
 }
 #science-technology p {
     position: absolute;
@@ -248,9 +240,6 @@ footer
 /* レスポンシブ・ブレークポイント768px
 ------------------------------- */
 @media screen and (max-width: 768px) {
-    .inner {
-        padding: 0 15px;
-    }
     .section-title .ja {
         font-size: 1.5rem;
     }
@@ -289,7 +278,13 @@ news
 #news dl {
     margin: 20px 22px 0 0;
 }
-#news dl .hide {
+/*
+4つ目以降を非表示にする
+ */
+ #news dl dt:nth-of-type(n + 4) {
+    display: none;
+}
+#news dl dd:nth-of-type(n + 4) {
     display: none;
 }
 #news dl dt {
@@ -342,4 +337,14 @@ footer
 #footer {
     padding: 40px 20px 30px 20px;
 }
+#footer .footer-main p {
+    margin-right: 30px;
+}
+#footer .footer-main ul {
+    margin-right: 30px;
+}
+#footer .footer-main ul li:nth-of-type(n + 2) {
+    margin-right: 10px;
+}
+
 }

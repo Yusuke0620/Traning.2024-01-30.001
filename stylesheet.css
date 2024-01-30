@@ -78,7 +78,7 @@ img {
 mainVisual
 -------------------------------------------*/
 #mainVisual {
-    background-image: url("images/mainvisual-pc.jpg");
+    background-image: url("mainvisual-pc.jpg");
     height: 100vh;
     width: 100%;
     background-position: center top;
